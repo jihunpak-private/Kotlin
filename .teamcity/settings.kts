@@ -55,6 +55,13 @@ object Build : BuildType({
         }
     }
 
+    steps {
+        script {
+            name = "testjihun"
+            scriptContent = "ls"
+        }
+    }
+
 
     triggers {
         vcs {
