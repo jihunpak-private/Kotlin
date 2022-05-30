@@ -62,13 +62,19 @@ object Build : BuildType({
         }
     }
 
-        steps {
+    steps {
         script {
             name = "testfinal"
             scriptContent = "ls"
         }
     }
 
+    steps {
+        script {
+            name = "testfinalreal"
+            scriptContent = "ls"
+        }
+    }
 
 
     triggers {
