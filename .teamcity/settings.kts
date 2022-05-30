@@ -48,6 +48,14 @@ object Build : BuildType({
         }
     }
 
+    steps {
+        script {
+            name = "testzz"
+            scriptContent = "ls"
+        }
+    }
+
+
     triggers {
         vcs {
         }
@@ -61,6 +69,6 @@ object HttpsGithubComJihunpakPrivateKotlinRefsHeadsMain : GitVcsRoot({
     branchSpec = "refs/heads/*"
     authMethod = password {
         userName = "jihunpak"
-        password = "credentialsJSON:82858e1d-9bc2-4c98-9905-d60630a79f99"
+        password = "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"
     }
 })
