@@ -50,32 +50,10 @@ object Build : BuildType({
 
     steps {
         script {
-            name = "testzz"
+            name = "test2"
             scriptContent = "ls"
         }
     }
-
-    steps {
-        script {
-            name = "testjihun"
-            scriptContent = "ls"
-        }
-    }
-
-    steps {
-        script {
-            name = "testfinal"
-            scriptContent = "ls"
-        }
-    }
-
-    steps {
-        script {
-            name = "testfinalreal"
-            scriptContent = "ls"
-        }
-    }
-
 
     triggers {
         vcs {
